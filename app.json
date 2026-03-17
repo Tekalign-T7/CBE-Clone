@@ -4,7 +4,7 @@
     "slug": "CBE",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/cbe-logo.png",
     "scheme": "cbe",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
