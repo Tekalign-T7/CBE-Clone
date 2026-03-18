@@ -19,13 +19,12 @@ export default function Index() {
       {/* <Text style={[styles.text,{fontSize:20,marginTop:"40%"}]}>Pin</Text> */}
       <TextInput style={[styles.text,{fontSize:15,marginTop:"20%",color:"black"}]} placeholder="Pin"/>
       <Image style={{width:"80%",height:"10",marginTop:5,marginBottom:20}} source={bar}/>
-      <Pressable>
-        <Link href="/home">
-            <View style={styles.button}>
-              <Ionicons size={25} color="white" name="chevron-forward-outline"/>
-            </View>
-        </Link>
-      </Pressable>
+      <Link href="/home" asChild>
+        <Pressable style={styles.button}>
+          <Ionicons size={25} color="white" name="chevron-forward-outline"/>
+        </Pressable>
+      </Link>
+
       <Text style={styles.copyrightText}>Copyright © Commercial Bank of Ethiopia.</Text>
     </View>
   );
@@ -55,7 +54,7 @@ const styles=StyleSheet.create({
     width:50,
   },
   copyrightText:{
-    marginTop:"62%",
+    marginTop:"58%",
     color:"#651E9B"
   }
 })

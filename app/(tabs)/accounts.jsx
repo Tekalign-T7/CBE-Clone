@@ -1,12 +1,22 @@
 import { Text, View ,Image,StyleSheet,} from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import InfoHeader from "../components/infoheader";
+import List from "../components/list";
 
 
-export default function account() {
+export default function Account() {
   const padding=useSafeAreaInsets()
+
   return(
-    <View style={styles.container}>
-        <Text style={styles.text}>Account</Text>
+    <View style={{paddingTop:padding.top*0.002}}>
+       <InfoHeader/>
+        <View style={{alignItems:"center",height:60}}>
+            <Text style={{color:"gray",fontSize:20,fontWeight:"bold",}}><Text style={{color:"green"}}>.</Text>...</Text>
+            <Text style={{color:"#651E9B"}}>Payments.</Text>
+        </View>
+        <View style={styles.container}>
+          <List/>
+        </View>
     </View>
   )
 }

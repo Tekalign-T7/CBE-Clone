@@ -1,12 +1,18 @@
 import { Text, View ,Image,StyleSheet,} from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import InfoHeader from "../components/infoheader";
 
 
 export default function finance() {
   const padding=useSafeAreaInsets()
+
   return(
-    <View style={styles.container}>
-        <Text style={styles.text}>Finance</Text>
+    <View style={{paddingTop:padding.top*0.002}}>
+       <InfoHeader/>
+        <View style={{alignItems:"center",height:100}}>
+            <Text style={{color:"gray",fontSize:20,fontWeight:"bold",}}><Text style={{color:"green"}}>.</Text>...</Text>
+            <Text style={{color:"#651E9B"}}>Fast Payment Services.</Text>
+        </View>
     </View>
   )
 }
