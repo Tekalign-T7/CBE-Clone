@@ -10,6 +10,7 @@ export default function DashboardLayout(){
         <>
             <StatusBar value="auto"/>
             <Tabs screenOptions={{
+                headerShown:false,
                 tabBarActiveTintColor:"#651E9B",
                 tabBarInactiveTintColor:"#0a050e",
                 
@@ -19,6 +20,7 @@ export default function DashboardLayout(){
                 <Tabs.Screen name="home" 
                 options={{
                     title:"Home",
+                    
                     header:()=>(
                         <View style={{
                             paddingTop:padding.top,
@@ -44,7 +46,7 @@ export default function DashboardLayout(){
                     tabBarIcon:({focused})=>(
                     <Ionicons color={focused ? "#651E9B" : "#0a050e"} size={24} name={focused ? "apps-sharp" :"apps-outline"}/>
                 )}}/>
-                <Tabs.Screen name="finance" options={{title:"Finance",header:()=>(
+                <Tabs.Screen name="finance" options={{title:"Finance",headerShown:true,header:()=>(
                         <View style={{
                             paddingTop:padding.top,
                             height:60+padding.top,
@@ -68,7 +70,7 @@ export default function DashboardLayout(){
                     ),tabBarIcon:({focused})=>(
                     <Ionicons color={focused ? "#651E9B" : "#0a050e"} size={24} name={focused ? "business" :"business-outline"}/>
                 )}}/>
-                <Tabs.Screen name="accounts" options={{title:"Account",header:()=>(
+                <Tabs.Screen name="accounts" options={{title:"Account",headerShown:true,header:()=>(
                         <View style={{
                             paddingTop:padding.top,
                             height:60+padding.top,
@@ -92,7 +94,7 @@ export default function DashboardLayout(){
                     ),tabBarIcon:({focused})=>(
                     <Ionicons color={focused ? "#651E9B" : "#0a050e"} size={24} name={focused ? "wallet" :"wallet-outline"}/>
                 )}}/>
-                <Tabs.Screen name="recent"  options={{title:"Recent",header:()=>(
+                <Tabs.Screen name="recent"  options={{title:"Recent",headerShown:true,header:()=>(
                         <View style={{
                             paddingTop:padding.top,
                             height:60+padding.top,
