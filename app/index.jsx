@@ -13,7 +13,7 @@ export default function Index() {
     <View
       style={[styles.container,{paddingTop:3*padding.top,paddingBottom:padding.bottom}]}
     >
-      <Image style={{height:200,width:200}} source={cbelogo}/>
+      <Image style={{height:200,width:210}} source={cbelogo}/>
       <Text style={styles.text}>Welcome!</Text>
       <Text style={[styles.text,{fontSize:20}]}>Commercial Bank of Ethiopia</Text>
       {/* <Text style={[styles.text,{fontSize:20,marginTop:"40%"}]}>Pin</Text> */}
@@ -54,7 +54,7 @@ const styles=StyleSheet.create({
     width:50,
   },
   copyrightText:{
-    marginTop:"58%",
+    marginTop:"56%",
     color:"#651E9B"
   }
 })

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "CBE",
+    "name": "CBE Mobile Banking",
     "slug": "CBE",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,9 +14,9 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/cbe-logo.png",
-        "backgroundImage": "./assets/images/cbe-logo.png",
-        "monochromeImage": "./assets/images/cbe-logo.png"
+        "foregroundImage": "./assets/images/cbe-splash.png",
+        "backgroundImage": "./assets/images/cbe-splash.png",
+        "monochromeImage": "./assets/images/cbe-splash.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
