@@ -1,13 +1,25 @@
-import { Text, View ,Image,StyleSheet,} from "react-native";
+import { Text, View ,Image,StyleSheet,ScrollView} from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-
-
+import List from "../components/list";
 export default function recent() {
   const padding=useSafeAreaInsets()
   return(
-    <View style={styles.container}>
-        <Text style={styles.text}>Recent</Text>
-    </View>
+    <ScrollView>
+      <View style={styles.container}>
+        <Text style={{color:"#651E9B",fontSize:15,marginTop:5}}>Recent Transactions</Text>
+        <List deposited={false} action={"Withdrawal"} method={"Mobile Debit"} amount={"430"}/>
+        <List deposited={true} action={"Deposit"} method={"ATM Cash Withdrawal"} amount={"1500"}/>
+        <List deposited={false} action={"Withdrawal"} method={"ATM Cash Withdrawal"} amount={"200"}/>
+        <List deposited={true} action={"Deposit"} method={"Mobile Debit"} amount={"85"}/>
+        <List deposited={false} action={"Withdrawal"} method={"Mobile Debit"} amount={"1250"}/>
+        <List deposited={true} action={"Deposit"} method={"ATM Cash Withdrawal"} amount={"300"}/>
+        <List deposited={false} action={"Withdrawal"} method={"ATM Cash Withdrawal"} amount={"200"}/>
+        <List deposited={true} action={"Deposit"} method={"Mobile Debit"} amount={"620"}/>
+        <List deposited={false} action={"Withdrawal"} method={"Mobile Debit"} amount={"90"}/>
+        <List deposited={true} action={"Deposit"} method={"ATM Cash Withdrawal"} amount={"2500"}/>
+      </View>
+    </ScrollView>
+
   )
 }
 
@@ -15,9 +27,10 @@ export default function recent() {
 const styles=StyleSheet.create({
   container:{
     flex: 1,
-    // justifyContent: "center",
     alignItems: "center",
-    backgroundColor:"#F2F2F2"
+    backgroundColor:"#F2F2F2",
+    paddingBottom:15,
+    gap:10,
   },
   text:{
     fontSize:35,

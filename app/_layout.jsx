@@ -6,6 +6,7 @@ export default function RootLayout() {
       <StatusBar value="auto"/>
       <Stack.Screen name="index" options={{headerShown:false}}/>
       <Stack.Screen name="(tabs)" options={{headerShown:false}}/>
+      <Stack.Screen name="(services)" options={{headerShown:false}}/>
     </Stack>
   );
 }

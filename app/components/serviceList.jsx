@@ -2,19 +2,18 @@ import { Text, View ,Image,StyleSheet,ImageBackground,ScrollView} from "react-na
 import {Ionicons} from "@expo/vector-icons"
 import redArrow from "@assets/images/red-arrow.png"
 import greenArrow from "@assets/images/green-arrow.png"
-export default function List({deposited,action,method,amount}){
+export default function ServiceList({iconName,title,subTitle}){
     return(
         <View style={styles.container}>
-            <View style={{flexDirection:"row",gap:10}}>
-                {deposited ? <Image style={styles.arrowImage} source={greenArrow} /> :<Image style={styles.arrowImage} source={redArrow}/>  }
+            <View style={{flexDirection:"row",gap:15}}>
+                <Ionicons size={35} name={iconName} style={{color:"#651E9B"}}/>
                 <View>
-                    <Text style={{fontWeight:"bold",color:"#651E9B",fontSize:15}}>{action}</Text>
-                    <Text style={{color:"#a7a2a2"}}>Mar 18 2026</Text>
+                    <Text style={{fontWeight:"bold",color:"#651E9B",fontSize:15}}>{title}</Text>
+                    <Text style={{color:"#a7a2a2"}}>{subTitle}</Text>
                 </View>
             </View>
-            <View style={{alignItems:"flex-end"}}>
-                <Text style={{fontWeight:"bold",color:"#651E9B",fontSize:15}}>{amount} <Text>Br.</Text></Text>
-                <Text style={{color:"#a7a2a2",fontWeight:500}}>{method}</Text>
+            <View style={{alignItems:"flex-end",justifyContent:"center"}}>
+                <Ionicons size={20} name="chevron-forward" style={{color:"#929095"}}/>
             </View>
         </View>
     )
@@ -25,14 +24,14 @@ const styles=StyleSheet.create({
         flexDirection:"row",
         borderWidth:1,
         backgroundColor:"white",
-        width:"90%",
         height:80,
         borderRadius:10,
         borderColor:"#EBEBEB",        
         paddingVertical:20,
-        paddingHorizontal:18,
+        paddingHorizontal:20,
+        marginHorizontal:"4%",
         justifyContent:"space-between",
-        
+        margin:5
       
        
     },

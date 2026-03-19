@@ -18,17 +18,21 @@ export default function InfoHeader(){
             <View>
               <Text style={[styles.text,{fontWeight:"bold",fontSize:15,letterSpacing:0.6}]}>Commercial Bank of Ethiopia</Text>
               <Text style={[styles.text,{letterSpacing:1.3}]}>The Bank you can always Rely on!</Text>
+              
+
           </View>
         </View>
+        <Text style={[styles.text,{textAlign:"center"}]}>Tekalign Tekola Kassaye</Text>
         <Text style={{color:"#e0dfdf"}}>Balance</Text>
         <View style={{flexDirection:"row",alignItems:"center",justifyContent:"center"}}>
-          {visible ? <Text style={{fontSize:25,marginRight:5,color:"#cdc9c9"}}>1,000,000</Text> : <Text style={{fontSize:30,color:"white",marginRight:5,letterSpacing:0.2}}>*****</Text>}
+          {visible ? <Text style={{fontSize:25,marginRight:5,color:"#e0dddd"}}>1,000,000</Text> : <Text style={{fontSize:30,color:"white",marginRight:5,letterSpacing:0.2}}>*****</Text>}
           <Text style={{fontSize:30,fontWeight:"bold",color:"white",marginRight:5}}>Br.</Text>
           <Ionicons onPress={()=>setVisible(!visible)} size={25} color="#cdc9c9" name={visible ? "eye" :"eye-off"}/>
         </View>
-        <View style={{flexDirection:"row",alignItems:"center",justifyContent:"center",marginBottom:10}}>
+        <View style={{flexDirection:"row",alignItems:"center",justifyContent:"center",marginBottom:5}}>
           <Text style={{fontSize:20,color:"#BA8E4F"}}>Saving-</Text>
           {visible ? <Text style={{fontSize:18,color:"#BA8E4F"}}>1000580152396</Text> : <Text style={{fontSize:18,color:"#BA8E4F"}}>1000****2396</Text>}
+          <Ionicons style={{paddingLeft:8}} color="#BA8E4F" size={25} name="copy"/>
         </View>
         <Text style={{color:"white"}}>Mar 18,2026 4:35:56PM </Text>
         </ImageBackground>

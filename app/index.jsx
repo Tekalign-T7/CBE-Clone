@@ -15,7 +15,7 @@ export default function Index() {
     >
       <Image style={{height:200,width:200}} source={cbelogo}/>
       <Text style={styles.text}>Welcome!</Text>
-      <Text style={[styles.text,{fontSize:20}]}>Commercial Bank of Ethiopia!</Text>
+      <Text style={[styles.text,{fontSize:20}]}>Commercial Bank of Ethiopia</Text>
       {/* <Text style={[styles.text,{fontSize:20,marginTop:"40%"}]}>Pin</Text> */}
       <TextInput style={[styles.text,{fontSize:15,marginTop:"20%",color:"black"}]} placeholder="Pin"/>
       <Image style={{width:"80%",height:"10",marginTop:5,marginBottom:20}} source={bar}/>

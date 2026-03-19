@@ -51,8 +51,8 @@ export default function DashboardLayout(){
                             flexDirection:"row",
                             alignItems:"center",
                             justifyContent:"space-between",
-                            paddingHorizontal:15,
-                            backgroundColor:"#F7F7F7"
+                            paddingHorizontal:20,
+                            backgroundColor:"#F7F7F7",
 
                         }
                         }>
